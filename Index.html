@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thrift Hub💸 | Trust. Consistency. Transparency.</title>
+  <style>
+    /* ====== GLOBAL ====== */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none; color: inherit;
+    }
+
+    /* ====== HEADER ====== */
+    header {
+      background: #0a294d;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 1.65rem;
+      margin-right: 1rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    /* ====== HERO ====== */
+    .hero {
+      background: linear-gradient(rgba(30,50,90,1), rgba(19,90,99,1)), url('images/ajo-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      animation: fadeIn 2.2s ease-in;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: #d4af37;
+      color: #fff;
+      font-size: 1rem;
+      transition: transform 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* ====== ABOUT ====== */
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #3a5f4c;
+    }
+    .section p {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    /* ====== FEATURES ====== */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #547aa5;
+      margin-bottom: 1rem;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background: #0a294d;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #d4af37;
+    }
+
+    /* ====== ANIMATIONS ====== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Thrift Hub💸</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#join">Join</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h2>Trust. Consistency. Transparency.</h2>
+      <p>A Community Driven System for Ajo Contributions and an In-Built Marketplace. Promoting Transparency and Rewarding Discipline.</p>
+      <button class="btn" onclick="scrollToJoin()">Get Started</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2>What is Thrift Hub💸?</h2>
+    <p>Thrift Hub — The Digital Ajo for Our Generation.</p>
+
+<p>At its core, Thrift Hub is a community savings and trust platform built around Ajo. You team up with people you trust, contribute steadily, and watch your consistency build credibility and unlock more opportunities.</p>
+
+<p>Every payment adds to your Hidden Score, every team strengthens your rank, and every good move makes the hub safer for everyone. It’s Ajo brought online — but Smarter, Transparent, and Trackable.</p>
+
+    </p>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <h2>Why Thrift Hub?</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Ajo Groups</h3>
+        <p>Save with friends and teammates you can trust. Build streaks, ranks, and credibility over time.</p>
+      </div>
+      <div class="card">
+        <h3>Hub Cart 🛒</h3>
+        <p>A built-in marketplace for products. Gain real buyers, visibility, and trust-driven sales.</p>
+      </div>
+      <div class="card">
+        <h3>Credit & Rank System</h3>
+        <p>Earn points and unlock ranks (B, A, S) with hidden score logic that rewards consistency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="section" id="join">
+    <h2>Ready to Join?</h2>
+    <p>Take the first step toward smarter savings and transparent growth. Sign up now.</p>
+    <button class="btn" onclick="alert('Signup Coming Soon 🚀')">Join Thrift Hub💸</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Thrift Hub | Trust, Consistency and Transparency</p> <p>Founder <a href="#">JS Noble | Data Vendor 
+    1</a></p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    function scrollToJoin() {
+      document.getElementById("join").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
